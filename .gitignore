@@ -1,0 +1,11 @@
+# venv files
+venv/**
+
+# idea files
+.idea/**
+
+# all pyc
+**.pyc
+
+# all data
+**/*.db
