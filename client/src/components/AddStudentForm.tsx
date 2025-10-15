@@ -1,6 +1,7 @@
 import { JSX, CSSProperties, ChangeEvent, FormEvent, KeyboardEvent, useEffect, useMemo, useState } from 'react';
 import { useMutate } from '../hooks/useMutate';
 import { createStudent, updateStudent } from '../services/students';
+import type { StudentPayload } from '../types/student';
 
 export type AddStudentFormProps = {
   onSuccess: () => void;
@@ -26,15 +27,8 @@ type FormValues = {
   gpa: string;
 };
 
-// Payload expected by API
-type Payload = {
-  class: number;
-  name: string;
-  sex: string;
-  age: number;
-  siblings: number;
-  gpa: number;
-};
+// Payload expected by API (shared type)
+type Payload = StudentPayload;
 
 type ApiResponse = { uuid: number };
 

@@ -5,16 +5,9 @@ import { deleteStudent } from '../services/students';
 import Table from '../components/Table';
 import Modal from '../components/Modal';
 import AddStudentForm from '../components/AddStudentForm';
+import type { Student } from '../types/student';
 
-type Student = {
-  uuid: number;
-  name: string;
-  sex: string;
-  age: number;
-  siblings: number;
-  gpa: number;
-  class: number;
-};
+// Student type imported from shared types
 
 // Columns are created in-component so we can access handlers
 
