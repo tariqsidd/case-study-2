@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const Students = Loadable(lazy(() => import('./pages/Students')));
 const FindStudent = Loadable(lazy(() => import('./pages/FindStudent')));
 
+
 function App(): JSX.Element {
     return (
         <BrowserRouter>
